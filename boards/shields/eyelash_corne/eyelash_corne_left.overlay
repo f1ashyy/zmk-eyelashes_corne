@@ -11,5 +11,5 @@
 #include <input/processors/runtime-input-processor.dtsi>
 
 &left_encoder {
-    status = "okay";
+    status = "disabled";
 };

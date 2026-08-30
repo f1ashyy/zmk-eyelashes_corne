@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   KUNTEM:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - V
   - L
   - N
@@ -13,8 +13,8 @@ layers:
   - O
   - U
   - J
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-tab$$
   - T
   - S
   - R
@@ -29,8 +29,8 @@ layers:
   - I
   - E
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '=', s: +}
   - Z
   - X
   - P
@@ -39,17 +39,17 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - M
   - Y
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: <, s: ','}
+  - {t: '>', s: .}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - LGUI
-  - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: '$$mdi:keyboard-return$$', h: FN}
-  - SYMBOL
-  - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: RETURN, h: NAV}
+  - '&td0'
+  NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -62,90 +62,90 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - HOME
-  - PG UP
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB EFF
+  - Z
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB EFR
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
-  - END
-  - PG DN
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F
+  - H
+  - J
+  - K
+  - L
+  - PgUp
+  - Ctl+Z
+  - Ctl+A
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - INS
+  - HOME
+  - PgDn
+  - PgUp
+  - END
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-space$$', h: FN, type: held}
+  - $$mdi:apple-keyboard-option$$
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - ':'
+  - _
   - '%'
+  - '@'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - '|'
+  - {t: ;, s: ':'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: \, s: '|'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
   - '~'
+  - {t: '-', s: _}
+  - +
+  - '*'
+  - ^
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $
+  - '{'
+  - (
+  - )
+  - '}'
+  - '#'
+  - RGB EFR
+  - RGB EFF
+  - {t: \, s: '|'}
+  - '&'
+  - '!'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - '&studio_unlock'
@@ -161,42 +161,42 @@ layers:
   - F9
   - F10
   - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:progress-download$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - PRINTSCREEN
-  - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLLLOCK
+  - PRINTSCREEN
+  - Gui+PRINTSCREEN
+  - Gui+Sft+PRINTSCREEN
   - PAUSE BREAK
+  - F12
+  - {t: BT DISC, h: '0'}
+  - $$mdi:bluetooth-off$$
+  - BT CLR ALL
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&soft_off'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&bl BL_DEC'
+  - RGB BRD
+  - $$mdi:progress-download$$
+  - RGB TOG
+  - RGB BRI
+  - '&bl BL_INC'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  NAV:
+  PLACEHOLDER:
   - $$mdi:keyboard-tab$$
   - V
   - L
@@ -235,14 +235,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - M
   - Y
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: <, s: ','}
+  - {t: '>', s: .}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - LGUI
-  - NUMBER
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: '$$mdi:keyboard-return$$', h: FN}
+  - {t: RETURN, h: FN}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
 combos:

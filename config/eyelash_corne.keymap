@@ -21,6 +21,22 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        comma_morph: comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            display-name = "Comma Morph";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&kp COMMA>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_morph: dot_morph {
+            compatible = "zmk,behavior-mod-morph";
+            display-name = "Dot Morph";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN>, <&kp DOT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     /**/
     /*     rsr_vol: rsr_vol { */
     /*         compatible = "zmk,behavior-runtime-sensor-rotate"; */
@@ -49,60 +65,59 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        kuntem {
             display-name = "KUNTEM";
             bindings = <
-&kp TAB    &kp V  &kp L  &kp N     &kp D  &kp K                                 &none               &kp Q        &kp W  &kp O      &kp U    &kp J     &kp BSPC
-&td0       &kp T  &kp S  &kp R     &kp H  &kp F                     &none       &none        &none  &kp G        &kp C  &kp A      &kp I    &kp E     &kp SQT
-&kp LCTRL  &kp Z  &kp Z  &kp X     &kp P  &kp B        &none                    &none               &kp M        &kp Y  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&none    &kp V      &kp L  &kp N          &kp D         &kp K          &none                   &kp Q          &kp W        &kp O                    &kp U       &kp J      &none
+&kp TAB  &kp T      &kp S  &kp R          &kp H         &kp F  &none   &none   &none           &kp G          &kp C        &kp A                    &kp I       &kp E      &kp SQT
+&none    &kp EQUAL  &kp Z  &kp X          &kp P         &kp B          &none   &none           &kp M          &kp Y        &comma_morph             &dot_morph  &kp SLASH  &none
+                           &kp LEFT_GUI   &lt 2 SPACE   &mt LEFT_CONTROL ESCAPE                &kp BACKSPACE  &lt 1 RETURN  &td0 
             >;
 
         };
 
-        lower_layer {
-            display-name = "NUMBER";
-            bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                        &none                  &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3               &none              &none           &none  &trans           &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF   &none                       &none                  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                               &kp INS          &kp DEL          &trans
-            >;
-
-        };
-
-        raise_layer {
-            display-name = "SYMBOL";
-            bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                      &none                 &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &none     &none    &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5    &none              &none                 &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                            &kp RET    &trans     &trans
-            >;
-
-        };
-
-        layer_3 {
-            display-name = "FN";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                 &none               &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                 &none         &none        &none  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5   &none                       &none               &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                     &trans       &trans     &trans
-            >;
-
-        };
-
-        layer_4 {
+        nav {
             display-name = "NAV";
             bindings = <
-&kp TAB    &kp V  &kp L  &kp N     &kp D  &kp K                                 &none               &kp Q        &kp W  &kp O      &kp U    &kp J     &kp BSPC
-&td0       &kp T  &kp S  &kp R     &kp H  &kp F                     &none       &none        &none  &kp G        &kp C  &kp A      &kp I    &kp E     &kp SQT
-&kp LCTRL  &kp Z  &kp Z  &kp X     &kp P  &kp B        &none                    &none               &kp M        &kp Y  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none                   &kp N6   &kp N7       &kp N8         &kp N9       &kp N0   &trans
+&trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp Z      &none   &none   &none   &kp F    &kp H        &kp J          &kp K        &kp L    &kp PAGE_UP
+&kp LC(Z)  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &none   &none           &kp INS  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &kp DELETE
+                                 &trans     &trans     &trans                             &trans   &lt 3 SPACE  &kp LEFT_ALT
+            >;
+
+        };
+
+        symbol {
+            display-name = "SYMBOL";
+            bindings = <
+&none            &none            &kp COLON      &kp UNDER  &kp PRCNT  &kp AT     &none                   &kp PIPE  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none     &none
+&kp GRAVE        &kp TILDE        &kp MINUS      &kp PLUS   &kp ASTRK  &kp CARET  &none   &none   &none   &kp DLLR  &kp LBRC       &kp LPAR          &kp RPAR           &kp RBRC  &kp HASH
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp BACKSLASH  &kp AMPS   &kp EXCL   &none      &none   &none           &none     &kp PLUS       &trans            &trans             &trans    &trans
+                                                 &trans     &trans     &trans                             &trans    &trans         &trans
+            >;
+
+        };
+
+        fn {
+            display-name = "FN";
+            bindings = <
+&studio_unlock  &kp F1        &kp F2          &kp F3        &kp F4        &kp F5      &none                   &kp F6          &kp F7           &kp F8               &kp F9                   &kp F10          &kp F11
+&bt BT_PRV      &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT  &none   &none   &none   &kp SCROLLLOCK  &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &kp LG(LS(PRINTSCREEN))  &kp PAUSE_BREAK  &kp F12
+&bt BT_DISC 0   &bt BT_CLR    &bt BT_CLR_ALL  &bootloader   &sys_reset    &soft_off   &none   &none           &bl BL_DEC      &rgb_ug RGB_BRD  &bootloader          &rgb_ug RGB_TOG          &rgb_ug RGB_BRI  &bl BL_INC
+                                              &trans        &trans        &trans                              &trans          &trans           &trans
+            >;
+
+        };
+
+        placeholder {
+            display-name = "PLACEHOLDER";
+            bindings = <
+&kp TAB           &kp V  &kp L  &kp N         &kp D   &kp K        &none                   &kp Q         &kp W  &kp O          &kp U       &kp J      &kp BACKSPACE
+&td0              &kp T  &kp S  &kp R         &kp H   &kp F        &none   &none   &none   &kp G         &kp C  &kp A          &kp I       &kp E      &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp Z  &kp X         &kp P   &kp B        &none   &none           &kp M         &kp Y  &comma_morph   &dot_morph  &kp SLASH  &kp ESCAPE
+                                &kp LEFT_GUI  &trans  &lt 3 SPACE                          &lt 3 RETURN  &mo 2  &kp RIGHT_ALT
             >;
 
         };
     };
 };
-

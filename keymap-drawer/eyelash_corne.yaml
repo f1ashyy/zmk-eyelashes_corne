@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   KUNTEM:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
   - V
   - L
   - N
@@ -42,13 +42,13 @@ layers:
   - {t: <, s: ','}
   - {t: '>', s: .}
   - {t: /, s: '?'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: RETURN, h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - $$mdi:apple-keyboard-command$$
   - '&td0'
+  - {t: RETURN, h: NAV}
+  - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -77,7 +77,7 @@ layers:
   - J
   - K
   - L
-  - PgUp
+  - $$mdi:backspace-reverse-outline$$
   - Ctl+Z
   - Ctl+A
   - Ctl+X
@@ -91,16 +91,16 @@ layers:
   - PgDn
   - PgUp
   - END
-  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-space$$', h: FN}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: FN, type: held}
-  - $$mdi:apple-keyboard-option$$
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Z
+  - Ctl+Y
   - ':'
   - _
   - '%'
@@ -110,8 +110,8 @@ layers:
   - {t: ;, s: ':'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB EFR
+  - RGB EFF
   - {t: '`', s: '~'}
   - '~'
   - {t: '-', s: _}
@@ -127,12 +127,12 @@ layers:
   - )
   - '}'
   - '#'
-  - RGB EFR
-  - RGB EFF
+  - Ctl+X
+  - Ctl+C
   - {t: \, s: '|'}
   - '&'
   - '!'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
@@ -162,10 +162,10 @@ layers:
   - F10
   - F11
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,9 +189,9 @@ layers:
   - $$mdi:progress-download$$
   - RGB TOG
   - RGB BRI
-  - '&bl BL_INC'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}

@@ -82,7 +82,7 @@
                     &kp A    &kp I    &kp E    &kp SQT    &kp LEFT_SHIFT    &kp EQUAL
                     &kp Z    &kp X    &kp P    &kp B    &none    &none
                     &kp M    &kp Y    &comma_morph    &dot_morph    &kp SLASH    &kp LEFT_ALT
-                    &mt LEFT_CONTROL ESCAPE    &lt 2 SPACE    &kp LEFT_GUI    &shift_caps_lock_tap_dance    &lt 1 RETURN    &kp BACKSPACE
+                    &mt LEFT_CONTROL ESCAPE    &lt 2 SPACE    &kp LEFT_GUI    &td0   &lt 1 RETURN    &kp BACKSPACE
                 >;
             };
             nav {

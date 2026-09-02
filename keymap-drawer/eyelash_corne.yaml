@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - $$mdi:apple-keyboard-command$$
-  - '&shift_caps_lock_tap_dance'
+  - '&td0'
   - {t: RETURN, h: NAV}
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:

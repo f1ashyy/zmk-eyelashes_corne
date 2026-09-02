@@ -29,7 +29,7 @@ layers:
   - I
   - E
   - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '=', s: +}
   - Z
   - X
@@ -46,108 +46,10 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - $$mdi:apple-keyboard-command$$
-  - '&td0'
+  - '&shift_caps_lock_tap_dance'
   - {t: RETURN, h: NAV}
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - Z
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F
-  - H
-  - J
-  - K
-  - L
-  - $$mdi:backspace-reverse-outline$$
-  - Ctl+Z
-  - Ctl+A
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - INS
-  - HOME
-  - PgDn
-  - PgUp
-  - END
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
-  - Ctl+Z
-  - Ctl+Y
-  - ':'
-  - _
-  - '%'
-  - '@'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '|'
-  - {t: ;, s: ':'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - RGB EFR
-  - RGB EFF
-  - {t: '`', s: '~'}
-  - '~'
-  - {t: '-', s: _}
-  - +
-  - '*'
-  - ^
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $
-  - '{'
-  - (
-  - )
-  - '}'
-  - '#'
-  - Ctl+X
-  - Ctl+C
-  - {t: \, s: '|'}
-  - '&'
-  - '!'
-  - Ctl+V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  FN:
   - '&studio_unlock'
   - F1
   - F2
@@ -172,8 +74,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - SCROLLLOCK
   - PRINTSCREEN
-  - Gui+PRINTSCREEN
-  - Gui+Sft+PRINTSCREEN
+  - '134676550'
+  - '168230982'
   - PAUSE BREAK
   - F12
   - {t: BT DISC, h: '0'}
@@ -181,7 +83,7 @@ layers:
   - BT CLR ALL
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&soft_off'
+  - '&z_so_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&bl BL_DEC'
@@ -196,7 +98,56 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  PLACEHOLDER:
+  SYMBOL:
+  - '17235997'
+  - '17235996'
+  - '34013235'
+  - '34013229'
+  - '34013218'
+  - {t: '2', s: '@'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '34013233'
+  - {t: ;, s: ':'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - RGB EFR
+  - RGB EFF
+  - {t: NAV, h: toggle}
+  - '34013237'
+  - {t: '-', s: _}
+  - '34013230'
+  - '34013221'
+  - '34013219'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '34013217'
+  - '34013231'
+  - '34013222'
+  - '34013223'
+  - '34013232'
+  - '34013216'
+  - '17235995'
+  - '17235974'
+  - {t: \, s: '|'}
+  - '34013220'
+  - '34013214'
+  - '17235993'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  BLANK:
   - $$mdi:keyboard-tab$$
   - V
   - L
@@ -210,7 +161,7 @@ layers:
   - U
   - J
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - '&shift_caps_lock_tap_dance'
   - T
   - S
   - R
@@ -241,8 +192,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: RETURN, h: FN}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - {t: RETURN, h: NAV}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
 combos:

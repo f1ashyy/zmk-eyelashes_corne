@@ -13,7 +13,7 @@ layers:
   - O
   - U
   - J
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: PLACEHOLDER, h: toggle}
   - $$mdi:keyboard-tab$$
   - T
   - S
@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - $$mdi:apple-keyboard-command$$
-  - '&td0'
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: RETURN, h: NAV}
+  - '&td0'
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -62,8 +62,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INS
+  - {t: KUNTEM, h: toggle}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -86,28 +86,28 @@ layers:
   - Ctl+Y
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - INS
-  - HOME
   - PgDn
-  - PgUp
+  - HOME
+  - {t: <, s: ','}
+  - {t: '>', s: .}
   - END
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - Ctl+Z
   - Ctl+Y
   - ':'
-  - _
+  - {t: ;, s: ':'}
   - '%'
-  - {t: '2', s: '@'}
+  - '@'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
-  - {t: ;, s: ':'}
+  - _
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - RGB EFR
@@ -126,7 +126,7 @@ layers:
   - (
   - )
   - '}'
-  - '#'
+  - '"'
   - Ctl+X
   - Ctl+C
   - {t: \, s: '|'}
@@ -135,17 +135,17 @@ layers:
   - Ctl+V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '#'
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: <, s: ','}
+  - {t: '>', s: .}
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - '&studio_unlock'
@@ -191,31 +191,31 @@ layers:
   - RGB BRI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   PLACEHOLDER:
-  - $$mdi:keyboard-tab$$
-  - V
-  - L
-  - N
-  - D
-  - K
+  - RGB TOG
+  - RGB HUI
+  - RGB HUD
+  - RGB SAI
+  - RGB SAD
+  - RGB EFF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Q
+  - '&bl BL_SET 100'
   - W
   - O
   - U
   - J
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - T
-  - S
-  - R
-  - H
-  - F
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
+  - RGB BRI
+  - RGB BRD
+  - RGB SPI
+  - RGB SPD
+  - RGB EFR
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -225,7 +225,7 @@ layers:
   - I
   - E
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - Z
   - Z
   - X
@@ -238,13 +238,13 @@ layers:
   - {t: <, s: ','}
   - {t: '>', s: .}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: RETURN, h: FN}
-  - SYMBOL
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: RETURN, h: NAV}
+  - '&td0'
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'

@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-macro";
             display-name = "Caps Lock + RGB Toggle";
             #binding-cells = <0>;
-            bindings = <&kp CAPS>, <&rgb_ug RGB_COLOR_HSB(0,0,100)>, <&rgb_ug RGB_TOG>;
+            bindings = <&kp CAPS>, <&rgb_ug RGB_TOG>;
         };
 
         comma_morph: comma_morph {
@@ -76,10 +76,10 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&kp ESCAPE      &kp V      &kp L  &kp N                    &kp D        &kp K         &none                   &kp Q  &kp W         &kp O          &kp U       &kp J      &none
-&kp TAB         &kp T      &kp S  &kp R                    &kp H        &kp F         &none   &none   &none   &kp G  &kp C         &kp A          &kp I       &kp E      &kp SQT
-&kp LEFT_SHIFT  &kp EQUAL  &kp Z  &kp X                    &kp P        &kp B         &none   &none           &kp M  &kp Y         &comma_morph   &dot_morph  &kp SLASH  &kp LEFT_ALT
-                                  &mt LEFT_CONTROL ESCAPE  &lt 2 SPACE  &kp LEFT_GUI                          &td0   &lt 1 RETURN  &kp BACKSPACE
+&kp ESCAPE      &kp V      &kp L  &kp N                    &kp D         &kp K        &none                   &kp Q         &kp W  &kp O          &kp U       &kp J      &tog 4
+&kp TAB         &kp T      &kp S  &kp R                    &kp H         &kp F        &none   &none   &none   &kp G         &kp C  &kp A          &kp I       &kp E      &kp SQT
+&kp LEFT_SHIFT  &kp EQUAL  &kp Z  &kp X                    &kp P         &kp B        &none   &none           &kp M         &kp Y  &comma_morph   &dot_morph  &kp SLASH  &kp LEFT_ALT
+                                  &mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI  &lt 2 SPACE                          &lt 1 RETURN  &td0   &kp BACKSPACE
             >;
 
         };
@@ -87,10 +87,10 @@
         nav {
             display-name = "NAV";
             bindings = <
-&trans     &kp N1     &kp N2     &kp N3     &kp N4       &kp N5     &none                   &kp N6   &kp N7    &kp N8         &kp N9       &kp N0   &trans
-&trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &kp Z      &none   &none   &none   &kp F    &kp H     &kp J          &kp K        &kp L    &kp DELETE
-&kp LC(Z)  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp LC(Y)  &none   &none           &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
-                                 &trans     &lt 3 SPACE  &trans                             &trans   &trans    &trans
+&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       &none                   &kp N6         &kp N7    &kp N8        &kp N9      &kp N0   &kp INS
+&to 0      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp Z        &none   &none   &none   &kp F          &kp H     &kp J         &kp K       &kp L    &kp DELETE
+&kp LC(Z)  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)    &none   &none           &kp PAGE_DOWN  &kp HOME  &comma_morph  &dot_morph  &kp END  &kp PAGE_UP
+                                 &trans     &trans     &lt 3 SPACE                          &trans         &trans    &trans
             >;
 
         };
@@ -98,10 +98,10 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&kp LC(Z)  &kp LC(Y)  &kp COLON      &kp UNDER  &kp PRCNT  &kp N2     &none                   &kp PIPE          &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&tog 1     &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp CARET  &none   &none   &none   &kp DLLR          &kp LBRC       &kp LPAR          &kp RPAR           &kp RBRC         &kp HASH
-&kp LC(X)  &kp LC(C)  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp LC(V)  &none   &none           &none             &kp GRAVE      &trans            &trans             &trans           &trans
-                                     &trans     &trans     &trans                             &kp LEFT_CONTROL  &trans         &trans
+&kp LC(Z)  &kp LC(Y)  &kp COLON      &kp SEMICOLON  &kp PRCNT  &kp AT     &none                   &kp PIPE  &kp UNDER         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
+&tog 1     &kp TILDE  &kp MINUS      &kp PLUS       &kp ASTRK  &kp CARET  &none   &none   &none   &kp DLLR  &kp LBRC          &kp LPAR          &kp RPAR           &kp RBRC         &kp DQT
+&kp LC(X)  &kp LC(C)  &kp BACKSLASH  &kp AMPS       &kp EXCL   &kp LC(V)  &none   &none           &kp HASH  &kp GRAVE         &comma_morph      &dot_morph         &kp QMARK        &trans
+                                     &trans         &trans     &trans                             &trans    &kp LEFT_CONTROL  &trans
             >;
 
         };
@@ -120,10 +120,10 @@
         placeholder {
             display-name = "PLACEHOLDER";
             bindings = <
-&kp TAB           &kp V  &kp L  &kp N         &kp D   &kp K        &none                   &kp Q         &kp W  &kp O          &kp U       &kp J      &kp BACKSPACE
-&td0              &kp T  &kp S  &kp R         &kp H   &kp F        &none   &none   &none   &kp G         &kp C  &kp A          &kp I       &kp E      &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp Z  &kp X         &kp P   &kp B        &none   &none           &kp M         &kp Y  &comma_morph   &dot_morph  &kp SLASH  &kp ESCAPE
-                                &kp LEFT_GUI  &trans  &lt 3 SPACE                          &lt 3 RETURN  &mo 2  &kp RIGHT_ALT
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF  &none                   &bl BL_SET 100  &kp W  &kp O         &kp U       &kp J      &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &none   &none   &none   &kp G           &kp C  &kp A         &kp I       &kp E      &kp SQT
+&trans           &kp Z            &kp Z            &kp X            &kp P            &kp B            &none   &none           &kp M           &kp Y  &comma_morph  &dot_morph  &kp SLASH  &trans
+                                                   &trans           &lt 2 SPACE      &lt 2 SPACE                              &lt 1 RETURN    &td0   &trans
             >;
 
         };

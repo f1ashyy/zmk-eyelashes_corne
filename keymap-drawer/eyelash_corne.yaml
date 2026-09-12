@@ -16,9 +16,9 @@ layers:
   - {t: PLACEHOLDER, h: toggle}
   - $$mdi:keyboard-tab$$
   - T
-  - S
-  - R
-  - H
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - F
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - SYMBOL
+  - $$mdi:keyboard-space$$
   - {t: RETURN, h: NAV}
   - '&td0'
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -142,8 +142,8 @@ layers:
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}

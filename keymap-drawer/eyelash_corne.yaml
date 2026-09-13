@@ -15,19 +15,19 @@ layers:
   - J
   - {t: PLACEHOLDER, h: toggle}
   - $$mdi:keyboard-tab$$
-  - T
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: R, h: LGUI}
   - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - F
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - G
-  - C
-  - A
-  - I
-  - E
+  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: RGUI}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '=', s: +}
@@ -43,11 +43,11 @@ layers:
   - {t: '>', s: .}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - SYMBOL
   - $$mdi:keyboard-space$$
   - {t: RETURN, h: NAV}
-  - '&td0'
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}

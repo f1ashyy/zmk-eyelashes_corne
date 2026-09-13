@@ -83,9 +83,21 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            flavor = "hold-preferred";
+            tapping-term-ms = <140>;
+            flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41>;
+            quick-tap-ms = <140>;
+        };
+
+        fast_th: fast_th {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FAST_TH";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            flavor = "balanced";
+            quick-tap-ms = <140>;
         };
 
         /**/
@@ -122,10 +134,10 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&kp ESCAPE      &kp V      &kp L            &kp N                    &kp D                &kp K                      &none         &kp Q         &kp W  &kp O          &kp U       &kp J      &tog 4
-&kp TAB         &kp T      &hml LEFT_ALT S  &hml LEFT_GUI R          &hml LEFT_CONTROL H  &kp F               &none  &none  &none  &kp G         &kp C  &kp A          &kp I       &kp E      &kp SQT
-&kp LEFT_SHIFT  &kp EQUAL  &kp Z            &kp X                    &kp P                &kp B      &none           &none         &kp M         &kp Y  &comma_morph   &dot_morph  &kp SLASH  &kp LEFT_ALT
-                                            &mt LEFT_CONTROL ESCAPE  &mo 2                &kp SPACE                                &lt 1 RETURN  &td0   &kp BACKSPACE
+&kp ESCAPE      &kp V         &kp L        &kp N              &kp D         &kp K                      &none         &kp Q         &kp W                  &kp O          &kp U        &kp J          &tog 4
+&kp TAB         &hml LSHFT T  &hml LALT S  &hml LGUI R        &hml LCTRL H  &kp F               &none  &none  &none  &kp G         &hmr RIGHT_CONTROL C   &hmr RGUI A    &hmr RALT I  &hmr LSHIFT E  &kp SQT
+&kp LEFT_SHIFT  &kp EQUAL     &kp Z        &kp X              &kp P         &kp B      &none           &none         &kp M         &kp Y                  &comma_morph   &dot_morph   &kp SLASH      &kp LEFT_ALT
+                                           &fast_th LGUI TAB  &mo 2         &kp SPACE                                &lt 1 RETURN  &sh_esc RSHIFT ESCAPE  &kp BACKSPACE
             >;
         };
 

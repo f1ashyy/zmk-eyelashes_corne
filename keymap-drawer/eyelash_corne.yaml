@@ -68,11 +68,11 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - Z
+  - ^
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F
+  - $
   - H
   - J
   - K
@@ -83,14 +83,14 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - Ctl+Y
+  - Ctl+HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgDn
-  - HOME
-  - {t: <, s: ','}
-  - {t: '>', s: .}
   - END
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ',', s: <}
+  - .
+  - {t: /, s: '?'}
   - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

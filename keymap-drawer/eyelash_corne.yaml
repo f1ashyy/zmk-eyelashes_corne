@@ -262,3 +262,5 @@ combos:
   k: {t: '''', s: '"'}
 - p: [8, 23]
   k: '"'
+- p: [30, 39]
+  k: $$mdi:apple-keyboard-caps$$

@@ -171,12 +171,27 @@
 
         L_ALT {
             bindings = <&sk LALT>;
-            key-positions = <15 16 14>;
+            key-positions = <15 14 16>;
         };
 
         R_ALT {
             bindings = <&sk RALT>;
             key-positions = <24 25 26>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <39 38>;
+        };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <17 4>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <8 23>;
         };
     };
 
@@ -209,9 +224,9 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&kp LC(Z)  &kp LC(Y)  &kp COLON      &kp SEMICOLON  &kp PRCNT  &kp AT                     &none         &kp PIPE  &kp UNDER         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&tog 1     &kp TILDE  &kp MINUS      &kp PLUS       &kp ASTRK  &kp CARET           &none  &none  &none  &kp DLLR  &kp LBRC          &kp LPAR          &kp RPAR           &kp RBRC         &kp DQT
-&kp LC(X)  &kp LC(C)  &kp BACKSLASH  &kp AMPS       &kp EXCL   &kp LC(V)  &none           &none         &kp HASH  &kp GRAVE         &comma_morph      &dot_morph         &kp QMARK        &trans
+&kp LC(Z)  &kp GRAVE  &kp COLON      &kp SEMICOLON  &kp PRCNT  &kp AT                     &none         &kp PIPE  &kp UNDER         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &rgb_ug RGB_EFF
+&tog 1     &kp TILDE  &kp MINUS      &kp PLUS       &kp ASTRK  &kp CARET           &none  &none  &none  &kp DLLR  &kp LBRC          &kp LPAR          &kp RPAR           &kp RBRC   &kp DQT
+&kp LC(X)  &kp LC(C)  &kp BACKSLASH  &kp AMPS       &kp EXCL   &kp LC(V)  &none           &none         &kp HASH  &kp GRAVE         &comma_morph      &dot_morph         &kp QMARK  &trans
                                      &trans         &trans     &trans                                   &trans    &kp LEFT_CONTROL  &trans
             >;
         };

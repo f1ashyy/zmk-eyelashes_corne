@@ -39,8 +39,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - M
   - Y
-  - {t: <, s: ','}
-  - {t: '>', s: .}
+  - {t: <, s: ''''}
+  - {t: '>', s: '"'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
@@ -137,8 +137,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
   - '#'
-  - {t: <, s: ''''}
-  - {t: '>', s: '"'}
+  - {t: <, s: ','}
+  - {t: '>', s: .}
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

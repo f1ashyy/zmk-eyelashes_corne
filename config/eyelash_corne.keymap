@@ -160,22 +160,22 @@
         };
 
         L_CTRL {
-            bindings = <&kp LCTRL>;
+            bindings = <&sk LCTRL>;
             key-positions = <15 16 17>;
         };
 
         R_CTRL {
-            bindings = <&kp RCTRL>;
+            bindings = <&sk RCTRL>;
             key-positions = <23 24 25>;
         };
 
         L_ALT {
-            bindings = <&kp LALT>;
+            bindings = <&sk LALT>;
             key-positions = <15 16 14>;
         };
 
         R_ALT {
-            bindings = <&kp RALT>;
+            bindings = <&sk RALT>;
             key-positions = <24 25 26>;
         };
     };

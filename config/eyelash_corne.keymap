@@ -226,6 +226,48 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <30 39>;
         };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <3 2>;
+            layers = <2>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <3 4>;
+            layers = <2>;
+        };
+
+        select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <15 16>;
+            layers = <2>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <15 17>;
+            layers = <2>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <17 16>;
+            layers = <2>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <31 32>;
+            layers = <2>;
+        };
+
+        ter_paste {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <31 30>;
+            layers = <2>;
+        };
     };
 
     macros {

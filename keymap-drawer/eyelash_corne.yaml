@@ -16,17 +16,17 @@ layers:
   - {t: PLACEHOLDER, h: toggle}
   - $$mdi:keyboard-tab$$
   - T
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: R, h: LGUI}
-  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
+  - S
+  - R
+  - H
   - F
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - G
-  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: A, h: RGUI}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - C
+  - A
+  - I
   - E
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
@@ -248,3 +248,11 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [15, 16, 17]
+  k: $$mdi:apple-keyboard-control$$
+- p: [23, 24, 25]
+  k: $$mdi:apple-keyboard-control$$
+- p: [15, 16, 14]
+  k: $$mdi:apple-keyboard-option$$
+- p: [24, 25, 26]
+  k: $$mdi:apple-keyboard-option$$

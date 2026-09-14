@@ -101,13 +101,13 @@ layers:
   SYMBOL:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - ':'
-  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  - '%'
-  - '@'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '|'
   - _
+  - ':'
+  - '%'
+  - '!'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '@'
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
@@ -137,9 +137,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $
   - '#'
-  - {t: <, s: ','}
-  - {t: '>', s: .}
-  - '?'
+  - {t: ',', s: <}
+  - .
+  - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}

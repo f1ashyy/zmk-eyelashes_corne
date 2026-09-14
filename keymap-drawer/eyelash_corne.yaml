@@ -249,10 +249,10 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [15, 16, 17]
-  k: $$mdi:apple-keyboard-control$$
+  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [23, 24, 25]
-  k: $$mdi:apple-keyboard-control$$
+  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [15, 16, 14]
-  k: $$mdi:apple-keyboard-option$$
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [24, 25, 26]
-  k: $$mdi:apple-keyboard-option$$
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}

@@ -55,7 +55,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <5 4 3 2 1 0 13 14 15 16 17 18 33 32 31 30 29 28>;
+            hold-trigger-key-positions = <5 4 3 2 1 0 13 14 15 16 17 18 33 32 31 30 29 28 47>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -74,7 +74,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <105>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 47>;
         };
 
         pos_fast_hold_tap: pos_fast_hold_tap {
@@ -85,7 +85,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <115>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46>;
             quick-tap-ms = <115>;
         };
 
@@ -108,7 +108,31 @@
             #binding-cells = <2>;
             tapping-term-ms = <115>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46>;
+            quick-tap-ms = <115>;
+        };
+
+        gui_tab: gui_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GUI_TAB";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <115>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46>;
+            quick-tap-ms = <115>;
+        };
+
+        sh_esc: sh_esc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SH_ESC";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <115>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 42>;
             quick-tap-ms = <115>;
         };
 
@@ -146,10 +170,10 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&kp ESCAPE      &kp V      &kp L        &kp N                        &kp D         &kp K                      &none         &kp Q                         &kp W                             &kp O          &kp U        &kp J      &tog 4
-&kp TAB         &kp T      &hml LALT S  &hml LGUI R                  &hml LCTRL H  &kp F               &none  &none  &none  &kp G                         &hmr RIGHT_CONTROL C              &hmr RGUI A    &hmr RALT I  &kp E      &kp SQT
-&kp LEFT_SHIFT  &kp EQUAL  &kp Z        &kp X                        &kp P         &kp B      &none           &none         &kp M                         &kp Y                             &comma_morph   &dot_morph   &kp SLASH  &kp LEFT_ALT
-                                        &pos_fast_hold_tap LGUI TAB  &mo 2         &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &pos_fast_hold_tap RSHIFT ESCAPE  &kp BACKSPACE
+&kp ESCAPE      &kp V      &kp L        &kp N              &kp D         &kp K                      &none         &kp Q                         &kp W                  &kp O          &kp U        &kp J      &tog 4
+&kp TAB         &kp T      &hml LALT S  &hml LGUI R        &hml LCTRL H  &kp F               &none  &none  &none  &kp G                         &hmr RIGHT_CONTROL C   &hmr RGUI A    &hmr RALT I  &kp E      &kp SQT
+&kp LEFT_SHIFT  &kp EQUAL  &kp Z        &kp X              &kp P         &kp B      &none           &none         &kp M                         &kp Y                  &comma_morph   &dot_morph   &kp SLASH  &kp LEFT_ALT
+                                        &gui_tab LGUI TAB  &mo 2         &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sh_esc RSHIFT ESCAPE  &kp BACKSPACE
             >;
         };
 

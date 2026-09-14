@@ -15,7 +15,7 @@ layers:
   - J
   - {t: PLACEHOLDER, h: toggle}
   - $$mdi:keyboard-tab$$
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - T
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: R, h: LGUI}
   - {t: H, h: '$$mdi:apple-keyboard-control$$'}
@@ -27,7 +27,7 @@ layers:
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: RGUI}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - E
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '=', s: +}
@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - SYMBOL
   - $$mdi:keyboard-space$$
-  - {t: RETURN, h: NAV}
+  - {t: RETURN, h: '&lt 1'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
@@ -193,7 +193,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   PLACEHOLDER:

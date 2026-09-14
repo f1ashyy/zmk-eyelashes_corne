@@ -221,6 +221,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <8 23>;
         };
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <30 39>;
+        };
     };
 
     macros {

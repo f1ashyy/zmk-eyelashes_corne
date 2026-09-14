@@ -100,7 +100,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - Ctl+Z
-  - Ctl+Y
+  - {t: '`', s: '~'}
   - ':'
   - {t: ;, s: ':'}
   - '%'
@@ -110,7 +110,7 @@ layers:
   - _
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - RGB EFR
+  - {t: '`', s: '~'}
   - RGB EFF
   - {t: NAV, h: toggle}
   - '~'
@@ -252,7 +252,13 @@ combos:
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [23, 24, 25]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-- p: [15, 16, 14]
+- p: [15, 14, 16]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [24, 25, 26]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+- p: [39, 38]
+  k: {t: ;, s: ':'}
+- p: [17, 4]
+  k: {t: '''', s: '"'}
+- p: [8, 23]
+  k: '"'

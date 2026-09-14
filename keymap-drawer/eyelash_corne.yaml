@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   KUNTEM:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - V
   - L
   - N
@@ -13,8 +13,8 @@ layers:
   - O
   - U
   - J
-  - {t: PLACEHOLDER, h: toggle}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - T
   - S
   - R
@@ -28,8 +28,8 @@ layers:
   - A
   - I
   - E
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '=', s: +}
   - Z
   - X
@@ -42,7 +42,7 @@ layers:
   - {t: <, s: ''''}
   - {t: '>', s: '"'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - SYMBOL
   - $$mdi:keyboard-space$$
@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -62,8 +62,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - INS
-  - {t: KUNTEM, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -77,8 +77,8 @@ layers:
   - J
   - K
   - L
-  - $$mdi:backspace-reverse-outline$$
-  - Ctl+Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+A
   - Ctl+X
   - Ctl+C
@@ -91,7 +91,7 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
-  - PgUp
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: FN}
@@ -99,10 +99,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
-  - Ctl+Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
   - ':'
-  - {t: ;, s: ':'}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - '%'
   - '@'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -111,36 +111,36 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
-  - RGB EFF
-  - {t: NAV, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '~'
   - {t: '-', s: _}
   - +
   - '*'
-  - ^
+  - '&'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $
+  - '|'
   - '{'
   - (
   - )
   - '}'
-  - '"'
-  - Ctl+X
-  - Ctl+C
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - '&'
   - '!'
-  - Ctl+V
+  - ^
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
+  - $
   - '#'
   - {t: <, s: ','}
   - {t: '>', s: .}
   - '?'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
-  - '&studio_unlock'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
   - F2
   - F3
@@ -160,8 +160,8 @@ layers:
   - F8
   - F9
   - F10
-  - F11
-  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -174,9 +174,9 @@ layers:
   - PRINTSCREEN
   - Gui+PRINTSCREEN
   - Gui+Sft+PRINTSCREEN
-  - PAUSE BREAK
-  - F12
-  - {t: BT DISC, h: '0'}
+  - F11
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - $$mdi:progress-download$$
@@ -188,8 +188,8 @@ layers:
   - RGB BRD
   - $$mdi:progress-download$$
   - RGB TOG
-  - RGB BRI
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   PLACEHOLDER:
-  - RGB TOG
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB HUI
   - RGB HUD
   - RGB SAI
@@ -209,8 +209,8 @@ layers:
   - O
   - U
   - J
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB TOG
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB BRI
   - RGB BRD
   - RGB SPI
@@ -224,8 +224,8 @@ layers:
   - A
   - I
   - E
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - Z
   - X
@@ -238,7 +238,7 @@ layers:
   - {t: <, s: ','}
   - {t: '>', s: .}
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}

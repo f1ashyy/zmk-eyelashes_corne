@@ -135,6 +135,26 @@
             quick-tap-ms = <115>;
         };
 
+        dquote_morph: dquote_morph {
+            compatible = "zmk,behavior-mod-morph";
+            display-name = "Dot Morph";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN>, <&kp DOUBLE_QUOTES>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "DQUOTE_MORPH";
+        };
+
+        squote_morph: squote_morph {
+            compatible = "zmk,behavior-mod-morph";
+            display-name = "Dot Morph";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&kp SINGLE_QUOTE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "SQUOTE_MORPH";
+        };
+
         /**/
         /*     rsr_vol: rsr_vol { */
         /*         compatible = "zmk,behavior-runtime-sensor-rotate"; */
@@ -224,10 +244,10 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&kp LC(Z)  &kp GRAVE  &kp COLON      &kp SEMICOLON  &kp PRCNT  &kp AT                     &none         &kp PIPE  &kp UNDER         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &rgb_ug RGB_EFF
-&tog 1     &kp TILDE  &kp MINUS      &kp PLUS       &kp ASTRK  &kp CARET           &none  &none  &none  &kp DLLR  &kp LBRC          &kp LPAR          &kp RPAR           &kp RBRC   &kp DQT
-&kp LC(X)  &kp LC(C)  &kp BACKSLASH  &kp AMPS       &kp EXCL   &kp LC(V)  &none           &none         &kp HASH  &kp GRAVE         &comma_morph      &dot_morph         &kp QMARK  &trans
-                                     &trans         &trans     &trans                                   &trans    &kp LEFT_CONTROL  &trans
+&kp LC(Z)  &kp GRAVE  &kp COLON      &kp SEMICOLON  &kp PRCNT  &kp AT                     &none         &kp PIPE   &kp UNDER         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &rgb_ug RGB_EFF
+&tog 1     &kp TILDE  &kp MINUS      &kp PLUS       &kp ASTRK  &kp CARET           &none  &none  &none  &kp DLLR   &kp LBRC          &kp LPAR          &kp RPAR           &kp RBRC   &kp DQT
+&kp LC(X)  &kp LC(C)  &kp BACKSLASH  &kp AMPS       &kp EXCL   &kp LC(V)  &none           &none         &kp GRAVE  &kp HASH          &squote_morph     &dquote_morph      &kp QMARK  &trans
+                                     &trans         &trans     &trans                                   &trans     &kp LEFT_CONTROL  &trans
             >;
         };
 

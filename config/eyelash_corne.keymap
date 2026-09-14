@@ -158,6 +158,26 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        L_CTRL {
+            bindings = <&kp LCTRL>;
+            key-positions = <15 16 17>;
+        };
+
+        R_CTRL {
+            bindings = <&kp RCTRL>;
+            key-positions = <23 24 25>;
+        };
+
+        L_ALT {
+            bindings = <&kp LALT>;
+            key-positions = <15 16 14>;
+        };
+
+        R_ALT {
+            bindings = <&kp RALT>;
+            key-positions = <24 25 26>;
+        };
     };
 
     macros {
@@ -169,10 +189,10 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&kp ESCAPE      &kp V      &kp L        &kp N              &kp D         &kp K                      &none         &kp Q                         &kp W                  &kp O          &kp U        &kp J      &tog 4
-&kp TAB         &kp T      &hml LALT S  &hml LGUI R        &hml LCTRL H  &kp F               &none  &none  &none  &kp G                         &hmr RIGHT_CONTROL C   &hmr RGUI A    &hmr RALT I  &kp E      &kp SQT
-&kp LEFT_SHIFT  &kp EQUAL  &kp Z        &kp X              &kp P         &kp B      &none           &none         &kp M                         &kp Y                  &comma_morph   &dot_morph   &kp SLASH  &kp LEFT_ALT
-                                        &gui_tab LGUI TAB  &mo 2         &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sh_esc RSHIFT ESCAPE  &kp BACKSPACE
+&kp ESCAPE      &kp V      &kp L  &kp N              &kp D  &kp K                      &none         &kp Q                         &kp W                  &kp O          &kp U       &kp J      &tog 4
+&kp TAB         &kp T      &kp S  &kp R              &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                  &kp A          &kp I       &kp E      &kp SQT
+&kp LEFT_SHIFT  &kp EQUAL  &kp Z  &kp X              &kp P  &kp B      &none           &none         &kp M                         &kp Y                  &comma_morph   &dot_morph  &kp SLASH  &kp LEFT_ALT
+                                  &gui_tab LGUI TAB  &mo 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sh_esc RSHIFT ESCAPE  &kp BACKSPACE
             >;
         };
 

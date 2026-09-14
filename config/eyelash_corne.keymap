@@ -252,10 +252,10 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&none  &kp GRAVE  &kp COLON      &kp LC(BACKSPACE)  &kp PRCNT  &kp AT                         &none         &kp PIPE    &kp UNDER  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &none
-&none  &kp TILDE  &kp MINUS      &kp PLUS           &kp ASTRK  &kp AMPERSAND           &none  &none  &none  &kp PIPE    &kp LBRC   &kp LPAR          &kp RPAR           &kp RBRC   &none
-&none  &trans     &kp BACKSLASH  &kp AMPS           &kp EXCL   &kp CARET      &none           &none         &kp DOLLAR  &kp HASH   &comma_morph      &dot_morph         &kp QMARK  &none
-                                 &trans             &trans     &trans                                       &trans      &trans     &trans
+&none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                       &none         &kp AT      &kp LC(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &none
+&none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND           &none  &none  &none  &kp PIPE    &kp LBRC           &kp LPAR          &kp RPAR           &kp RBRC   &none
+&none  &trans     &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET      &none           &none         &kp DOLLAR  &kp HASH           &kp COMMA         &kp PERIOD         &kp SLASH  &none
+                                 &trans     &trans     &trans                                       &trans      &trans             &trans
             >;
         };
 

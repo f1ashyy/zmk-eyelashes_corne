@@ -264,3 +264,24 @@ combos:
   k: '"'
 - p: [30, 39]
   k: $$mdi:apple-keyboard-caps$$
+- p: [3, 2]
+  k: Ctl+Z
+  l: [SYMBOL]
+- p: [3, 4]
+  k: Ctl+Y
+  l: [SYMBOL]
+- p: [15, 16]
+  k: Ctl+A
+  l: [SYMBOL]
+- p: [15, 17]
+  k: Ctl+X
+  l: [SYMBOL]
+- p: [17, 16]
+  k: Ctl+C
+  l: [SYMBOL]
+- p: [31, 32]
+  k: Ctl+V
+  l: [SYMBOL]
+- p: [31, 30]
+  k: Ctl+Sft+V
+  l: [SYMBOL]

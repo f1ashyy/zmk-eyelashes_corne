@@ -284,8 +284,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - K
   - F
-  - Sft+<
-  - Sft+>
+  - {t: <, s: ''''}
+  - {t: '>', s: '"'}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

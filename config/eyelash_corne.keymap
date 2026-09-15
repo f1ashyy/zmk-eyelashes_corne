@@ -282,7 +282,7 @@
 
         R_SHIFT {
             bindings = <&sk RSHFT>;
-            key-positions = <15 16 18 25 24 22>;
+            key-positions = <25 24 22>;
         };
 
         tog_gallium {

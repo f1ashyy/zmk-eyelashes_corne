@@ -184,8 +184,8 @@ layers:
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:bluetooth-off$$
   - {t: PLACEHOLDER, h: toggle}
+  - '&caps_rgb'
   - SCROLLLOCK
   - Ins
   - F12
@@ -226,15 +226,15 @@ layers:
   - E
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Z
-  - Z
+  - BT CLR ALL
+  - $$mdi:bluetooth-off$$
   - X
   - P
   - B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '>', s: .}
   - {t: /, s: '?'}

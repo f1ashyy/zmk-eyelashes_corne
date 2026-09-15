@@ -110,7 +110,7 @@ layers:
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '~'

@@ -289,10 +289,10 @@
         nav {
             display-name = "NAV";
             bindings = <
-&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                        &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
-&none  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp CARET              &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
-&none  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(HOME)  &none           &none         &kp END     &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
-                             &trans     &trans     &lt 3 SPACE                                 &trans      &trans  &trans
+&none  &kp N1    &kp N2         &kp N3       &kp N4     &kp N5                       &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
+&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CARET             &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
+&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp HOME     &none           &none         &kp END     &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
+                                &trans       &trans     &lt 3 SPACE                                &trans      &trans  &trans
             >;
         };
 
@@ -309,10 +309,10 @@
         fn {
             display-name = "FN";
             bindings = <
-&none  &kp F1        &kp F2          &kp F3        &kp F4        &kp F5                      &none         &kp F6          &kp F7           &kp F8               &kp F9                   &kp F10  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT           &none  &none  &none  &kp SCROLLLOCK  &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &kp LG(LS(PRINTSCREEN))  &kp F11  &none
-&none  &bt BT_CLR    &bt BT_CLR_ALL  &bootloader   &sys_reset    &soft_off   &none           &none         &bl BL_DEC      &rgb_ug RGB_BRD  &bootloader          &rgb_ug RGB_TOG          &kp F12  &none
-                                     &trans        &trans        &trans                                    &trans          &trans           &trans
+&none  &kp F1        &kp F2          &kp F3           &kp F4        &kp F5                        &none         &kp F6          &kp F7           &kp F8               &kp F9                   &kp F10  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4           &none  &none  &none  &kp SCROLLLOCK  &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &kp LG(LS(PRINTSCREEN))  &kp F11  &none
+&none  &bt BT_CLR    &bt BT_CLR_ALL  &kp PAUSE_BREAK  &sys_reset    &bootloader   &none           &none         &bootloader     &sys_reset       &bootloader          &tog 4                   &kp F12  &none
+                                     &trans           &trans        &trans                                      &trans          &trans           &trans
             >;
         };
 
@@ -321,7 +321,7 @@
             bindings = <
 &none  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF                  &none         &bl BL_SET 100  &kp W  &kp O         &kp U       &kp J      &none
 &none  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR           &none  &none  &none  &kp G           &kp C  &kp A         &kp I       &kp E      &none
-&none  &kp Z            &kp Z            &kp X            &kp P            &kp B            &none           &none         &kp M           &kp Y  &comma_morph  &dot_morph  &kp SLASH  &none
+&none  &kp Z            &kp Z            &kp X            &kp P            &kp B            &none           &none         &trans          &kp Y  &comma_morph  &dot_morph  &kp SLASH  &none
                                          &trans           &lt 2 SPACE      &lt 2 SPACE                                    &lt 1 RETURN    &td0   &trans
             >;
         };

@@ -128,7 +128,7 @@ layers:
   - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
   - {t: \, s: '|'}
   - '&'
   - '!'
@@ -245,6 +245,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  gallium:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - B
+  - L
+  - D
+  - C
+  - V
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - J
+  - Y
+  - O
+  - U
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - N
+  - R
+  - T
+  - S
+  - G
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - P
+  - H
+  - A
+  - E
+  - I
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - X
+  - Q
+  - M
+  - W
+  - Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - K
+  - F
+  - Sft+<
+  - Sft+>
+  - {t: /, s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
@@ -288,3 +337,9 @@ combos:
 - p: [16, 18]
   k: Ctl+Sft+C
   l: [SYMBOL]
+- p: [15, 16, 18]
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+- p: [15, 16, 18, 25, 24, 22]
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+- p: [8, 9, 10]
+  k: {t: gallium, h: toggle}

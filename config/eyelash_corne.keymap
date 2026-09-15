@@ -274,6 +274,21 @@
             key-positions = <16 18>;
             layers = <2>;
         };
+
+        L_SHIFT {
+            bindings = <&sk LSHFT>;
+            key-positions = <15 16 18>;
+        };
+
+        R_SHIFT {
+            bindings = <&sk RSHFT>;
+            key-positions = <15 16 18 25 24 22>;
+        };
+
+        tog_gallium {
+            bindings = <&tog 5>;
+            key-positions = <8 9 10>;
+        };
     };
 
     macros {
@@ -307,7 +322,7 @@
             bindings = <
 &none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                       &none         &kp AT      &kp LC(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
 &none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND           &none  &none  &none  &kp PIPE    &kp LBRC           &kp LPAR          &kp RPAR           &kp RBRC   &none
-&none  &trans     &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET      &none           &none         &kp DOLLAR  &kp HASH           &kp COMMA         &kp PERIOD         &kp SLASH  &none
+&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET      &none           &none         &kp DOLLAR  &kp HASH           &kp COMMA         &kp PERIOD         &kp SLASH  &none
                                  &trans     &trans     &trans                                       &trans      &trans             &trans
             >;
         };
@@ -329,6 +344,15 @@
 &none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR           &none  &none  &none  &kp G           &kp C       &kp A        &kp I       &kp E      &none
 &none  &bt BT_CLR_ALL   &bt BT_CLR       &bootloader      &sys_reset       &rgb_ug RGB_TOG  &none           &none         &to 0           &sys_reset  &bootloader  &dot_morph  &kp SLASH  &none
                                          &trans           &trans           &trans                                         &trans          &trans      &trans
+            >;
+        };
+
+        gallium {
+            bindings = <
+&none  &kp B  &kp L  &kp D  &kp C  &kp V                  &none         &kp J  &kp Y  &kp O       &kp U       &none     &none
+&none  &kp N  &kp R  &kp T  &kp S  &kp G           &none  &none  &none  &kp P  &kp H  &kp A       &kp E       &kp I     &none
+&none  &kp X  &kp Q  &kp M  &kp W  &kp Z  &none           &none         &kp K  &kp F  &kp LS(LT)  &kp LS(GT)  &kp FSLH  &none
+                     &none  &none  &none                                &none  &none  &none
             >;
         };
     };

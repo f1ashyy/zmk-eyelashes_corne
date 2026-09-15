@@ -285,3 +285,6 @@ combos:
 - p: [31, 30]
   k: Ctl+Sft+V
   l: [SYMBOL]
+- p: [16, 18]
+  k: Ctl+Sft+C
+  l: [SYMBOL]

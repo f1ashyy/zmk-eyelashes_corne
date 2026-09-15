@@ -316,13 +316,13 @@
             >;
         };
 
-        placeholder {
-            display-name = "PLACEHOLDER";
+        misc {
+            display-name = "MISC";
             bindings = <
-&none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                  &none         &bl BL_SET 100  &kp W   &kp O   &kp U       &kp J      &none
-&none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR           &none  &none  &none  &kp G           &kp C   &kp A   &kp I       &kp E      &none
-&none  &bt BT_CLR_ALL   &bt BT_CLR       &kp X            &kp P            &kp B            &none           &none         &trans          &none   &none   &dot_morph  &kp SLASH  &none
-                                         &trans           &trans           &trans                                         &trans          &trans  &trans
+&none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                  &none         &bl BL_SET 100  &kp W       &kp O        &kp U       &kp J      &none
+&none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR           &none  &none  &none  &kp G           &kp C       &kp A        &kp I       &kp E      &none
+&none  &bt BT_CLR_ALL   &bt BT_CLR       &bootloader      &sys_reset       &kp B            &none           &none         &trans          &sys_reset  &bootloader  &dot_morph  &kp SLASH  &none
+                                         &trans           &trans           &trans                                         &trans          &trans      &trans
             >;
         };
     };

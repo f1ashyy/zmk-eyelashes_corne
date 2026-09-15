@@ -354,6 +354,8 @@
 &none  &kp X  &kp Q  &kp M  &kp W  &kp Z  &none           &none         &kp K  &kp F  &squote_morph  &dquote_morph  &kp FSLH  &none
                      &none  &none  &none                                &none  &none  &none
             >;
+
+            label = "GALLIUM";
         };
     };
 };

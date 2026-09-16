@@ -165,7 +165,7 @@
         sticky_sh_esc: sticky_sh_esc {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_SH_ESC";
-            bindings = <&kp>, <&kp>;
+            bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <115>;

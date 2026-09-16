@@ -289,6 +289,16 @@
             bindings = <&tog 5>;
             key-positions = <8 9 10>;
         };
+
+        l_ctrl+l_alt {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <14 15 16 17>;
+        };
+
+        r_ctrl+r_alt {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <23 24 25 26>;
+        };
     };
 
     macros {
@@ -300,9 +310,9 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&none  &kp V      &kp L  &kp N              &kp D  &kp K                      &none         &kp Q                         &kp W                  &kp O          &kp U          &kp J      &none
-&none  &kp T      &kp S  &kp R              &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                  &kp A          &kp I          &kp E      &none
-&none  &kp EQUAL  &kp Z  &kp X              &kp P  &kp B      &none           &none         &kp M                         &kp Y                  &squote_morph  &dquote_morph  &kp SLASH  &none
+&none  &kp V      &kp L  &kp N              &kp D  &kp K                      &none         &kp Q                         &kp W                  &kp O          &kp U       &kp J      &none
+&none  &kp T      &kp S  &kp R              &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                  &kp A          &kp I       &kp E      &none
+&none  &kp EQUAL  &kp Z  &kp X              &kp P  &kp B      &none           &none         &kp M                         &kp Y                  &comma_morph   &dot_morph  &kp SLASH  &none
                          &gui_tab LGUI TAB  &mo 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sh_esc RSHIFT ESCAPE  &kp BACKSPACE
             >;
         };
@@ -322,7 +332,7 @@
             bindings = <
 &none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                                     &none         &kp AT      &kp LC(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
 &none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND                         &none  &none  &none  &kp PIPE    &kp LBRC           &kp LPAR          &kp RPAR           &kp RBRC   &none
-&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET                    &none           &none         &kp DOLLAR  &kp HASH           &kp COMMA         &kp PERIOD         &kp SLASH  &none
+&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET                    &none           &none         &kp DOLLAR  &kp HASH           &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH  &none
                                  &trans     &trans     &pos_fast_layer_tap 1 SPACE                                &trans      &trans             &trans
             >;
         };

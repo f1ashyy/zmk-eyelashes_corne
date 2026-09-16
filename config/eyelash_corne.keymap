@@ -174,6 +174,26 @@
             quick-tap-ms = <115>;
         };
 
+        slow_layer_tap: slow_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLOW_LAYER_TAP";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <350>;
+        };
+
+        medium_layer_tap: medium_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MEDIUM_LAYER_TAP";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <275>;
+        };
+
         /**/
         /*     rsr_vol: rsr_vol { */
         /*         compatible = "zmk,behavior-runtime-sensor-rotate"; */
@@ -342,10 +362,10 @@
         nav {
             display-name = "NAV";
             bindings = <
-&none  &kp N1    &kp N2         &kp N3       &kp N4     &kp N5                       &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
-&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CARET             &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
-&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp HOME     &none           &none         &kp END     &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
-                                &trans       &trans     &lt 3 SPACE                                &trans      &trans  &trans
+&none  &kp N1    &kp N2         &kp N3       &kp N4     &kp N5                                     &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
+&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CARET                           &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
+&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp HOME                   &none           &none         &kp END     &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
+                                &trans       &trans     &medium_layer_tap 3 SPACE                                &trans      &trans  &trans
             >;
         };
 

@@ -39,8 +39,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - M
   - Y
-  - {t: <, s: ''''}
-  - {t: '>', s: '"'}
+  - {t: <, s: ','}
+  - {t: '>', s: .}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
@@ -137,8 +137,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $
   - '#'
-  - {t: ',', s: <}
-  - .
+  - {t: '''', s: '"'}
+  - '"'
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -343,3 +343,7 @@ combos:
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [8, 9, 10]
   k: {t: GALLIUM, h: toggle}
+- p: [14, 15, 16, 17]
+  k: Ctl+$$mdi:apple-keyboard-option$$
+- p: [23, 24, 25, 26]
+  k: Ctl+$$mdi:apple-keyboard-option$$

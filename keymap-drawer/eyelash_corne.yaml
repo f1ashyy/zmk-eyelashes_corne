@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
-  - SYMBOL
+  - {t: SYMBOL, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
   - {t: RETURN, h: NAV}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -341,9 +341,13 @@ combos:
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [25, 24, 22]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-- p: [8, 9, 10]
+- p: [2, 3, 4, 1]
   k: {t: GALLIUM, h: toggle}
 - p: [14, 15, 16, 17]
   k: Ctl+$$mdi:apple-keyboard-option$$
 - p: [23, 24, 25, 26]
   k: Ctl+$$mdi:apple-keyboard-option$$
+- p: [8, 9, 10]
+  k: $$mdi:keyboard-tab$$
+- p: [2, 3, 4]
+  k: $$mdi:keyboard-tab$$

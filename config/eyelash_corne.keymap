@@ -162,6 +162,18 @@
             label = "SQUOTE_MORPH";
         };
 
+        sticky_sh_esc: sticky_sh_esc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STICKY_SH_ESC";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <115>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 42>;
+            quick-tap-ms = <115>;
+        };
+
         /**/
         /*     rsr_vol: rsr_vol { */
         /*         compatible = "zmk,behavior-runtime-sensor-rotate"; */
@@ -287,7 +299,7 @@
 
         tog_gallium {
             bindings = <&tog 5>;
-            key-positions = <8 9 10>;
+            key-positions = <2 3 4 1>;
         };
 
         l_ctrl+l_alt {
@@ -298,6 +310,16 @@
         r_ctrl+r_alt {
             bindings = <&kp LC(LALT)>;
             key-positions = <23 24 25 26>;
+        };
+
+        r_tab {
+            bindings = <&kp TAB>;
+            key-positions = <8 9 10>;
+        };
+
+        l_tab {
+            bindings = <&kp TAB>;
+            key-positions = <2 3 4>;
         };
     };
 
@@ -310,10 +332,10 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&none  &kp V      &kp L  &kp N              &kp D  &kp K                      &none         &kp Q                         &kp W                  &kp O          &kp U       &kp J      &none
-&none  &kp T      &kp S  &kp R              &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                  &kp A          &kp I       &kp E      &none
-&none  &kp EQUAL  &kp Z  &kp X              &kp P  &kp B      &none           &none         &kp M                         &kp Y                  &comma_morph   &dot_morph  &kp SLASH  &none
-                         &gui_tab LGUI TAB  &mo 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sh_esc RSHIFT ESCAPE  &kp BACKSPACE
+&none  &kp V      &kp L  &kp N              &kp D  &kp K                      &none         &kp Q                         &kp W                         &kp O          &kp U       &kp J      &none
+&none  &kp T      &kp S  &kp R              &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                         &kp A          &kp I       &kp E      &none
+&none  &kp EQUAL  &kp Z  &kp X              &kp P  &kp B      &none           &none         &kp M                         &kp Y                         &comma_morph   &dot_morph  &kp SLASH  &none
+                         &gui_tab LGUI TAB  &sl 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sticky_sh_esc RSHIFT ESCAPE  &kp BACKSPACE
             >;
         };
 

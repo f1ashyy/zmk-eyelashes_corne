@@ -118,9 +118,9 @@
             quick-tap-ms = <140>;
         };
 
-        gui_tab: gui_tab {
+        gui_x: gui_x {
             compatible = "zmk,behavior-hold-tap";
-            label = "GUI_TAB";
+            label = "GUI_X";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -130,16 +130,16 @@
             quick-tap-ms = <130>;
         };
 
-        sh_esc: sh_esc {
+        sh_x: sh_x {
             compatible = "zmk,behavior-hold-tap";
-            label = "SH_ESC";
+            label = "SH_X";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <115>;
+            tapping-term-ms = <130>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 42>;
-            quick-tap-ms = <115>;
+            quick-tap-ms = <130>;
         };
 
         dquote_morph: dquote_morph {
@@ -177,7 +177,7 @@
         slow_layer_tap: slow_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "SLOW_LAYER_TAP";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -187,7 +187,7 @@
         medium_layer_tap: medium_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MEDIUM_LAYER_TAP";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -352,10 +352,10 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&none  &kp V      &kp L  &kp N              &kp D  &kp K                      &none         &kp Q                         &kp W                         &kp O          &kp U       &kp J      &none
-&none  &kp T      &kp S  &kp R              &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                         &kp A          &kp I       &kp E      &none
-&none  &kp EQUAL  &kp Z  &kp X              &kp P  &kp B      &none           &none         &kp M                         &kp Y                         &comma_morph   &dot_morph  &kp SLASH  &none
-                         &gui_tab LGUI TAB  &sl 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sticky_sh_esc RSHIFT ESCAPE  &kp BACKSPACE
+&none  &kp V      &kp L  &kp N            &kp D  &kp K                      &none         &kp Q                         &kp W                         &kp O          &kp U       &kp J      &none
+&none  &kp T      &kp S  &kp R            &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                         &kp A          &kp I       &kp E      &none
+&none  &kp EQUAL  &kp Z  &kp X            &kp P  &kp B      &none           &none         &kp M                         &kp Y                         &comma_morph   &dot_morph  &kp SLASH  &none
+                         &gui_x LGUI TAB  &sl 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sticky_sh_esc RSHIFT ESCAPE  &kp BACKSPACE
             >;
         };
 

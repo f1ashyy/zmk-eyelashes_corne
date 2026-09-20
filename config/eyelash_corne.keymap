@@ -107,10 +107,10 @@
             quick-tap-ms = <115>;
         };
 
-        pos_fast_layer_tap: pos_fast_layer_tap {
+        sticky_fast_layer_tap: sticky_fast_layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "POS_FAST_LAYER_TAP";
-            bindings = <&mo>, <&kp>;
+            label = "STICKY_FAST_LAYER_TAP";
+            bindings = <&sl>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -162,9 +162,9 @@
             label = "SQUOTE_MORPH";
         };
 
-        sticky_sh_esc: sticky_sh_esc {
+        sticky_sh_x: sticky_sh_x {
             compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_SH_ESC";
+            label = "STICKY_SH_X";
             bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
@@ -219,12 +219,12 @@
         };
 
         L_CTRL {
-            bindings = <&sk LCTRL>;
+            bindings = <&kp LCTRL>;
             key-positions = <15 16 17>;
         };
 
         R_CTRL {
-            bindings = <&sk RCTRL>;
+            bindings = <&kp RCTRL>;
             key-positions = <23 24 25>;
         };
 
@@ -352,30 +352,30 @@
         kuntem {
             display-name = "KUNTEM";
             bindings = <
-&none  &kp V      &kp L  &kp N            &kp D  &kp K                      &none         &kp Q                         &kp W                         &kp O          &kp U       &kp J      &none
-&none  &kp T      &kp S  &kp R            &kp H  &kp F               &none  &none  &none  &kp G                         &kp C                         &kp A          &kp I       &kp E      &none
-&none  &kp EQUAL  &kp Z  &kp X            &kp P  &kp B      &none           &none         &kp M                         &kp Y                         &comma_morph   &dot_morph  &kp SLASH  &none
-                         &gui_x LGUI TAB  &sl 2  &kp SPACE                                &pos_fast_layer_tap 1 RETURN  &sticky_sh_esc RSHIFT ESCAPE  &kp BACKSPACE
+&none  &kp V      &kp L  &kp N                    &kp D              &kp K                          &none         &kp Q                      &kp W                            &kp O            &kp U       &kp J      &none
+&none  &kp T      &kp S  &kp R                    &kp H              &kp F                   &none  &none  &none  &kp G                      &kp C                            &kp A            &kp I       &kp E      &none
+&none  &kp EQUAL  &kp Z  &kp X                    &kp P              &kp B          &none           &none         &kp M                      &kp Y                            &comma_morph     &dot_morph  &kp SLASH  &none
+                         &sticky_sh_x LSHIFT TAB  &gui_x LGUI ENTER  &kp BACKSPACE                                &medium_layer_tap 1 SPACE  &sticky_fast_layer_tap 2 ESCAPE  &sh_x RCTRL TAB
             >;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
-&none  &kp N1    &kp N2         &kp N3       &kp N4     &kp N5                                     &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
-&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CARET                           &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
-&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp HOME                   &none           &none         &kp END     &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
-                                &trans       &trans     &medium_layer_tap 3 SPACE                                &trans      &trans  &trans
+&none  &kp N1    &kp N2         &kp N3       &kp N4     &kp N5                                         &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
+&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CARET                               &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
+&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp HOME                       &none           &none         &kp END     &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
+                                &kp LCTRL    &trans     &medium_layer_tap 3 BACKSPACE                                &trans      &trans  &trans
             >;
         };
 
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                                     &none         &kp AT      &kp LC(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
-&none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND                         &none  &none  &none  &kp PIPE    &kp LBRC           &kp LPAR          &kp RPAR           &kp RBRC   &none
-&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET                    &none           &none         &kp DOLLAR  &kp HASH           &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH  &none
-                                 &trans     &trans     &pos_fast_layer_tap 1 SPACE                                &trans      &trans             &trans
+&none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                                            &none         &kp AT      &kp LC(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
+&none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND                                &none  &none  &none  &kp PIPE    &kp LBRC           &kp LPAR          &kp RPAR           &kp RBRC   &none
+&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET                           &none           &none         &kp DOLLAR  &kp HASH           &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH  &none
+                                 &trans     &trans     &sticky_fast_layer_tap 1 BACKSPACE                                &trans      &trans             &trans
             >;
         };
 

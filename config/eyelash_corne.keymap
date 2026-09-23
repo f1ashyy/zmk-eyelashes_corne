@@ -366,6 +366,16 @@
             layers = <2 0 5 1 4>;
             require-prior-idle-ms = <100>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <37 38>;
+        };
+
+        ctrl_backspace {
+            bindings = <&kp RC(BACKSPACE)>;
+            key-positions = <37 45>;
+        };
     };
 
     macros {

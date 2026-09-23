@@ -357,3 +357,7 @@ combos:
 - p: [23, 24]
   k: RIGHT GUI
   l: [NAV, KUNTEM, MISC, GALLIUM, FN]
+- p: [37, 38]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [37, 45]
+  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}

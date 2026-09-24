@@ -362,4 +362,4 @@ combos:
 - p: [37, 38, 39]
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
 - p: [44, 45]
-  k: $$mdi:apple-keyboard-shift$$
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}

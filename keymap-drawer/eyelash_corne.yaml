@@ -361,3 +361,5 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [37, 45]
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+- p: [37, 38, 39]
+  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}

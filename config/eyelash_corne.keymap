@@ -378,6 +378,12 @@
             key-positions = <37 38 39>;
             timeout-ms = <75>;
         };
+
+        shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <44 45>;
+            timeout-ms = <70>;
+        };
     };
 
     macros {

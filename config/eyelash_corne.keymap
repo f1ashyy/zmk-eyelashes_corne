@@ -370,16 +370,13 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <37 38>;
-        };
-
-        ctrl_backspace {
-            bindings = <&kp RC(BACKSPACE)>;
-            key-positions = <37 45>;
+            timeout-ms = <75>;
         };
 
         control_backspace {
             bindings = <&kp RC(BACKSPACE)>;
             key-positions = <37 38 39>;
+            timeout-ms = <75>;
         };
     };
 

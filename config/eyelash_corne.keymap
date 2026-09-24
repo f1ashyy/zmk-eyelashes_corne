@@ -408,7 +408,7 @@
             bindings = <&kp RIGHT_GUI>;
             key-positions = <23 24>;
             layers = <2 0 5 1 4>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <125>;
         };
 
         backspace {

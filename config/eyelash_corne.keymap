@@ -376,6 +376,11 @@
             bindings = <&kp RC(BACKSPACE)>;
             key-positions = <37 45>;
         };
+
+        control_backspace {
+            bindings = <&kp RC(BACKSPACE)>;
+            key-positions = <37 38 39>;
+        };
     };
 
     macros {

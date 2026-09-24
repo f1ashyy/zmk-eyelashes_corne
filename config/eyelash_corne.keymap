@@ -380,7 +380,7 @@
         };
 
         shift {
-            bindings = <&kp LSHIFT>;
+            bindings = <&sk LSHIFT>;
             key-positions = <44 45>;
             timeout-ms = <70>;
         };

@@ -273,14 +273,16 @@
             key-positions = <1 15 29>;
         };
 
-        L_CTRL {
-            bindings = <&kp LCTRL>;
-            key-positions = <15 16 17>;
+        r_gui {
+            bindings = <&kp RGUI>;
+            key-positions = <23 24 25>;
+            timeout-ms = <100>;
         };
 
-        R_CTRL {
-            bindings = <&kp RCTRL>;
-            key-positions = <23 24 25>;
+        l_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <15 16 17>;
+            timeout-ms = <100>;
         };
 
         L_ALT {
@@ -365,11 +367,13 @@
         L_SHIFT {
             bindings = <&sk LSHFT>;
             key-positions = <15 16 18>;
+            timeout-ms = <120>;
         };
 
         R_SHIFT {
             bindings = <&sk RSHFT>;
             key-positions = <25 24 22>;
+            timeout-ms = <120>;
         };
 
         tog_gallium {
@@ -380,49 +384,53 @@
         l_ctrl+l_alt {
             bindings = <&kp LC(LALT)>;
             key-positions = <14 15 16 17>;
+            timeout-ms = <140>;
         };
 
         r_ctrl+r_alt {
             bindings = <&kp LC(LALT)>;
-            key-positions = <23 24 25 26>;
+            key-positions = <24 25 26>;
+            timeout-ms = <140>;
         };
 
         r_tab {
             bindings = <&kp TAB>;
             key-positions = <8 9 10>;
+            timeout-ms = <85>;
         };
 
         l_tab {
             bindings = <&kp TAB>;
             key-positions = <2 3 4>;
+            timeout-ms = <85>;
         };
 
-        l_gui {
-            bindings = <&kp LEFT_GUI>;
+        l_ctrl {
+            bindings = <&kp LCTRL>;
             key-positions = <31 32>;
             layers = <2 0 5 1 4>;
-            timeout-ms = <110>;
+            timeout-ms = <130>;
         };
 
-        r_gui {
-            bindings = <&kp RIGHT_GUI>;
+        r_ctrl {
+            bindings = <&kp RCTRL>;
             key-positions = <37 38>;
             layers = <2 0 5 1 4>;
-            timeout-ms = <110>;
+            timeout-ms = <130>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <24 23>;
-            require-prior-idle-ms = <125>;
-            timeout-ms = <75>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <80>;
         };
 
         control_backspace {
             bindings = <&kp RC(BACKSPACE)>;
             key-positions = <16 17>;
-            require-prior-idle-ms = <125>;
-            timeout-ms = <75>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <80>;
         };
 
         shift {

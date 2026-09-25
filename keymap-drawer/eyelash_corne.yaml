@@ -297,10 +297,10 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [15, 16, 17]
-  k: $$mdi:apple-keyboard-control$$
 - p: [23, 24, 25]
-  k: $$mdi:apple-keyboard-control$$
+  k: RGUI
+- p: [15, 16, 17]
+  k: LGUI
 - p: [15, 14, 16]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [24, 25, 26]
@@ -345,17 +345,17 @@ combos:
   k: {t: GALLIUM, h: toggle}
 - p: [14, 15, 16, 17]
   k: Ctl+$$mdi:apple-keyboard-option$$
-- p: [23, 24, 25, 26]
+- p: [24, 25, 26]
   k: Ctl+$$mdi:apple-keyboard-option$$
 - p: [8, 9, 10]
   k: $$mdi:keyboard-tab$$
 - p: [2, 3, 4]
   k: $$mdi:keyboard-tab$$
 - p: [31, 32]
-  k: $$mdi:apple-keyboard-command$$
+  k: $$mdi:apple-keyboard-control$$
   l: [NAV, KUNTEM, MISC, GALLIUM, FN]
 - p: [37, 38]
-  k: RIGHT GUI
+  k: $$mdi:apple-keyboard-control$$
   l: [NAV, KUNTEM, MISC, GALLIUM, FN]
 - p: [24, 23]
   k: {t: '$$mdi:backspace$$', type: backspace}

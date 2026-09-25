@@ -399,27 +399,27 @@
 
         l_gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <16 17>;
+            key-positions = <31 32>;
             layers = <2 0 5 1 4>;
             require-prior-idle-ms = <125>;
         };
 
         r_gui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <23 24>;
+            key-positions = <37 38>;
             layers = <2 0 5 1 4>;
             require-prior-idle-ms = <125>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <37 38>;
+            key-positions = <24 23>;
             timeout-ms = <75>;
         };
 
         control_backspace {
             bindings = <&kp RC(BACKSPACE)>;
-            key-positions = <37 38 39>;
+            key-positions = <16 17>;
             timeout-ms = <75>;
         };
 

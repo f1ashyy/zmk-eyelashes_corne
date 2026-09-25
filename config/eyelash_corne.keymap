@@ -423,14 +423,12 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <24 23>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <80>;
         };
 
         control_backspace {
             bindings = <&kp RC(BACKSPACE)>;
             key-positions = <16 17>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <80>;
         };
 
         shift {

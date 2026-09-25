@@ -401,26 +401,26 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <31 32>;
             layers = <2 0 5 1 4>;
-            require-prior-idle-ms = <125>;
+            timeout-ms = <110>;
         };
 
         r_gui {
             bindings = <&kp RIGHT_GUI>;
             key-positions = <37 38>;
             layers = <2 0 5 1 4>;
-            require-prior-idle-ms = <125>;
+            timeout-ms = <110>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <24 23>;
-            timeout-ms = <75>;
+            require-prior-idle-ms = <110>;
         };
 
         control_backspace {
             bindings = <&kp RC(BACKSPACE)>;
             key-positions = <16 17>;
-            timeout-ms = <75>;
+            require-prior-idle-ms = <110>;
         };
 
         shift {

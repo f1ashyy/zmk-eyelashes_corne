@@ -478,10 +478,10 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                       &none         &kp AT      &kp LC(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
-&none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND           &none  &none  &none  &kp PIPE    &kp LBRC           &kp LPAR          &kp RPAR           &kp RBRC   &none
-&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET      &none           &none         &kp DOLLAR  &kp HASH           &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH  &none
-                                 &trans     &trans     &mo 2                                        &mo 4       &trans             &trans
+&none  &kp GRAVE  &kp UNDER      &kp COLON  &kp PRCNT  &kp EXCL                       &none         &kp AT         &kp HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
+&none  &kp TILDE  &kp MINUS      &kp PLUS   &kp ASTRK  &kp AMPERSAND           &none  &none  &none  &kp BACKSPACE  &kp LBRC  &kp LPAR          &kp RPAR           &kp RBRC   &none
+&none  &kp EQUAL  &kp BACKSLASH  &kp AMPS   &kp EXCL   &kp CARET      &none           &none         &kp DOLLAR     &kp PIPE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH  &none
+                                 &trans     &trans     &mo 2                                        &mo 4          &trans    &trans
             >;
         };
 

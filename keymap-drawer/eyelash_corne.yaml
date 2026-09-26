@@ -362,4 +362,4 @@ combos:
 - p: [44, 45]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [15, 16, 17]
-  k: LGUI
+  k: RGUI

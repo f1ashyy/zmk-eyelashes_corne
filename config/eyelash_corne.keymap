@@ -432,7 +432,7 @@
         };
 
         left_gui {
-            bindings = <&kp LGUI>;
+            bindings = <&kp RGUI>;
             key-positions = <15 16 17>;
             timeout-ms = <100>;
         };

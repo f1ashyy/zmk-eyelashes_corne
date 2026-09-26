@@ -297,7 +297,7 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [23, 24, 25]
+- p: [15, 16, 17]
   k: RGUI
 - p: [15, 14, 16]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -361,5 +361,5 @@ combos:
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
 - p: [44, 45]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-- p: [15, 16, 17]
+- p: [23, 24, 25]
   k: RGUI

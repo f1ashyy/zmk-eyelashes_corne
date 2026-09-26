@@ -345,7 +345,7 @@ combos:
   k: {t: GALLIUM, h: toggle}
 - p: [14, 15, 16, 17]
   k: Ctl+$$mdi:apple-keyboard-option$$
-- p: [24, 25, 26]
+- p: [24, 25, 26, 23]
   k: Ctl+$$mdi:apple-keyboard-option$$
 - p: [8, 9, 10]
   k: $$mdi:keyboard-tab$$

@@ -388,7 +388,7 @@
 
         r_ctrl+r_alt {
             bindings = <&kp LC(LALT)>;
-            key-positions = <24 25 26>;
+            key-positions = <24 25 26 23>;
         };
 
         r_tab {

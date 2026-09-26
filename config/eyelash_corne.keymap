@@ -468,10 +468,10 @@
         nav {
             display-name = "NAV";
             bindings = <
-&none  &kp N1    &kp N2         &kp N3       &kp N4               &kp N5                             &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
-&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT            &kp CARET                   &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
-&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END              &kp LC(BACKSPACE)  &none           &none         &kp DELETE  &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
-                                &trans       &gui_x LEFT_GUI TAB  &kp BACKSPACE                                    &trans      &trans  &trans
+&none  &kp N1    &kp N2         &kp N3       &kp N4     &kp N5                             &none         &kp N6      &kp N7  &kp N8     &kp N9      &kp N0     &none
+&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CARET                   &none  &none  &none  &kp DOLLAR  &kp H   &kp J      &kp K       &kp L      &none
+&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp LC(BACKSPACE)  &none           &none         &kp DELETE  &none   &kp COMMA  &kp PERIOD  &kp SLASH  &none
+                                &trans       &trans     &kp LEFT_GUI                                     &trans      &trans  &trans
             >;
         };
 

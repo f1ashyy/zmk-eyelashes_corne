@@ -377,13 +377,13 @@
 
         l_ctrl+l_alt {
             bindings = <&kp LC(LALT)>;
-            key-positions = <14 15 16>;
+            key-positions = <14 15 16 17>;
             timeout-ms = <140>;
         };
 
         r_ctrl+r_alt {
             bindings = <&kp LC(LALT)>;
-            key-positions = <24 25 26>;
+            key-positions = <24 25 26 23>;
             timeout-ms = <140>;
         };
 

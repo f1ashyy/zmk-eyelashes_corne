@@ -341,9 +341,9 @@ combos:
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [2, 3, 4, 1]
   k: {t: GALLIUM, h: toggle}
-- p: [14, 15, 16]
+- p: [14, 15, 16, 17]
   k: Ctl+$$mdi:apple-keyboard-option$$
-- p: [24, 25, 26]
+- p: [24, 25, 26, 23]
   k: Ctl+$$mdi:apple-keyboard-option$$
 - p: [8, 9, 10]
   k: $$mdi:keyboard-tab$$

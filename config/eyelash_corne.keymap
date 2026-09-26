@@ -377,7 +377,7 @@
 
         l_ctrl+l_alt {
             bindings = <&kp LC(LALT)>;
-            key-positions = <14 15 16 17>;
+            key-positions = <14 15 16>;
             timeout-ms = <140>;
         };
 

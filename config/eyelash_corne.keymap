@@ -275,7 +275,7 @@
 
         r_gui {
             bindings = <&kp RGUI>;
-            key-positions = <23 24 25>;
+            key-positions = <15 16 17>;
             timeout-ms = <100>;
         };
 
@@ -433,7 +433,7 @@
 
         left_gui {
             bindings = <&kp RGUI>;
-            key-positions = <15 16 17>;
+            key-positions = <23 24 25>;
             timeout-ms = <100>;
         };
     };

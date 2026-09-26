@@ -194,7 +194,7 @@ layers:
   - {type: held}
   - NAV
   - FN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}

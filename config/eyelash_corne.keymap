@@ -279,12 +279,6 @@
             timeout-ms = <100>;
         };
 
-        l_gui {
-            bindings = <&kp LGUI>;
-            key-positions = <15 16 17>;
-            timeout-ms = <100>;
-        };
-
         L_ALT {
             bindings = <&sk LALT>;
             key-positions = <15 14 16>;
@@ -435,6 +429,12 @@
             bindings = <&sk LSHIFT>;
             key-positions = <44 45>;
             timeout-ms = <70>;
+        };
+
+        left_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <15 16 17>;
+            timeout-ms = <100>;
         };
     };
 
